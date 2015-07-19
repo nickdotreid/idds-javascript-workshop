@@ -9,3 +9,5 @@ $ ->
 
     $('.run-btn', element).click ->
       console.log "Running..."
+      canvas = $('body').append '<div class="turtleCanvas"><div id="turtle" class="turtle"></div></div>'
+      $.turtle 'turtle'
