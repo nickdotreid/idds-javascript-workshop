@@ -89,10 +89,12 @@ body {
         border-bottom: 0;
     }
 }
-
+#_turtlefield {
+    z-index: 98 !important;
+}
 .turtleCanvas{
     position:fixed;
-    z-index: 98;
+    z-index: 97;
     top:0px;
     left:0px;
     height:100%;
