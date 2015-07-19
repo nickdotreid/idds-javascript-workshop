@@ -42,6 +42,14 @@
             <div id="logo">
                 <p>Logo, or tutrle graphics, is a programming language designed to teach kids to learn to program. This workshop uses a similar version of Logo written in Javascript because the visual aspect of Logo makes understanding programming easier.</p>
                 <h3>Draw a square</h3>
+                 <pre class="editor">
+function foo(items) {
+    var i;
+    for (i = 0; i &lt; items.length; i++) {
+        alert("Ace Rocks " + items[i]);
+    }
+}
+                </pre>
             </div>
             <div id="functions"></div>
             <div id="recursion"></div>
@@ -49,15 +57,15 @@
             <div class="footer">
                 <p>Written with ♥ by Nick Reid at <a href="https://iddsaarogyam.wordpress.com/">IDDS Aarogyam</a></p>
             </div>
-
         </div>
         
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
-        <!-- endbower -->
         <script src="bower_components/jquery-turtle/jquery-turtle.js"></script>
+        <script src="bower_components/ace-builds/src-noconflict/ace.js"></script>
+        <!-- endbower -->
         <!-- endbuild -->
         <script src="scripts/app.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
