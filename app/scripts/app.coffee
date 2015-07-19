@@ -10,4 +10,7 @@ $ ->
     $('.run-btn', element).click ->
       console.log "Running..."
       canvas = $('body').append '<div class="turtleCanvas"><div id="turtle" class="turtle"></div></div>'
-      $.turtle 'turtle'
+      turtle = $.turtle 'turtle'
+      home()
+      eval 'var turtle = $("#turtle")'
+      eval editor.getValue()
