@@ -9,7 +9,15 @@ $ ->
 
     $('.run-btn', element).click ->
       console.log "Running..."
-      canvas = $('body').append '<div class="turtleCanvas"><div id="turtle" class="turtle"></div></div>'
+      $('samp').show();
+      exit = ->
+        cg();
+        $('samp').hide();
+        canvas.remove();
+      $(document).keyup (e) =>
+        return if e.keyCode != 27
+        exit()
+      canvas = $('<div class="turtleCanvas"><div id="turtle" class="turtle"></div></div>').appendTo 'body' 
       turtle = $.turtle 'turtle'
       home()
       eval 'var turtle = $("#turtle")'
