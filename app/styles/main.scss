@@ -89,10 +89,8 @@ body {
         border-bottom: 0;
     }
 }
-#_turtlefield {
-    z-index: 98 !important;
-}
-.turtleCanvas{
+
+.backdrop{
     position:fixed;
     z-index: 97;
     top:0px;
@@ -101,7 +99,16 @@ body {
     width:100%;
     background: rgba(255,255,255, 0.8);
 }
+.backdrop-close {
+    position: fixed;
+    z-index:101;
+    top: 10px;
+    left: 10px;
+}
 
+#_turtlefield {
+    z-index: 98 !important;
+}
 .turtle{
     height: 24px;
     width: 20px;

@@ -17,7 +17,10 @@ $ ->
       $(document).keyup (e) =>
         return if e.keyCode != 27
         exit()
-      canvas = $('<div class="turtleCanvas"><div id="turtle" class="turtle"></div></div>').appendTo 'body' 
+      canvas = $('<a class="close-btn btn backdrop-close">Close</a><div class="backdrop backdrop-turtle"><div id="turtle" class="turtle"></div></div>').appendTo 'body'
+      $('.close', canvas).click (event) =>
+        event.preventDefault()
+        exit()
       turtle = $.turtle 'turtle'
       home()
       eval 'var turtle = $("#turtle")'
