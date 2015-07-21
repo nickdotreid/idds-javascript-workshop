@@ -18,7 +18,7 @@ $ ->
         return if e.keyCode != 27
         exit()
       canvas = $('<a class="close-btn btn backdrop-close">Close</a><div class="backdrop backdrop-turtle"><div id="turtle" class="turtle"></div></div>').appendTo 'body'
-      $('.close', canvas).click (event) =>
+      $('.backdrop-close').click (event) =>
         event.preventDefault()
         exit()
       turtle = $.turtle 'turtle'
